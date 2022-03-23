@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Новостная Страници</title>
+  </head>
+  <body>
+    <h1>Новости</h1>
+    {% for news_card in news_cards %}
+      <div>
+       <h2>{{ news_card.title }}</h2>
+        <img src="{{ news_card.image }}"/>
+        <p>{{ news_card.content }}</p>
+        <p>{{ news_card.published|date:"d.m.Y H:i:s" }}</p>
+      </div>
+
+    {% endfor %}
+  </body>
+</html>
