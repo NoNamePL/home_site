@@ -6,6 +6,6 @@ from django.conf.urls.static import static
 from .views import index
 
 urlpatterns = [
-    path('', index),
+    path('', index, name='home'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
