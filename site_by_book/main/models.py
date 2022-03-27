@@ -11,3 +11,9 @@ class NewsCart(models.Model):
         verbose_name_plural = "Новости"
         verbose_name = 'Новость'
         ordering = ['-published']
+
+
+class Users(models.Model):
+    login = models.CharField(max_length=50, verbose_name='Логин')
+    password = models.CharField(max_length=50, verbose_name='Пароль')
+

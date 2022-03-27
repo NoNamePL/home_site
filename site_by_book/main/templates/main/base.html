@@ -18,10 +18,12 @@
                 {% comment %}<li><a href="{% url 'about' %}" class="nav-link px-2 link-dark">Про нас</a></li>{% endcomment %}
             </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
+            <div class="col-md-3 text-end">
+                <form action="{url Users.login.html}">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                </form>
+                    <button type="button" class="btn btn-primary"  >Sign-up</button>
+            </div>
     </header>
 
 
